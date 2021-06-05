@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --lightblue: hsl(184, 100%, 22%);
+    --darkblue: hsl(179, 100%, 13%);
+    --white: hsl(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+
+/*web*/
+body{
+    font-size: 15px;
+    padding: 12% 25%;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+.sedans{
+    background-color: var(--orange);
+    padding: 2em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.suvs{
+    background-color: var(--lightblue);
+    padding: 2em;
+}
+
+.luxury{
+    background-color: var(--darkblue);
+    padding: 2em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+p{
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1rem 0 2rem;
+}
+.p1{
+    color: black;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+}
+.h1 {
+    color: black; 
+}
+
+button{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+.b1{
+    color: black;
+}
+.b2{
+    color: var(--lightblue);
+}
+.b3{
+    color: var(--darkblue);
+}
+
+/*Mobile*/
+@media only screen and (max-width: 400px){
+    body{
+        font-size: 15px;
+        padding: 0%;
+    }
+    .container :first-child{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .container :last-child {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .container{
+        grid-template-areas: 
+        "top top top"
+        "middle middle middle"
+        "bottom bottom bottom";
+        align-items: center;
+    }
+    .sedans{
+        background-color: var(--orange);
+        grid-area: top;
+        border-bottom-left-radius: 0%;
+    }
+    .suvs{
+        background-color: var(--lightblue);
+        grid-area: middle;
+        
+    }
+    .luxury{
+        background-color: var(--darkblue);
+        grid-area: bottom;
+        border-top-right-radius: 0%;
+
+    }
+    p{
+        color: var(--white);
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        color: white;
+    }
+    button{
+        border-radius: 20px;
+        padding: 10px;
+        border: none;
+    }
+    .b1{
+        color: var(--orange);
+    }
+    .b2{
+        color: var(--lightblue);
+    }
+    .b3{
+        color: var(--darkblue);
+    } 
+}

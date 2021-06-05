@@ -1,1 +1,32 @@
-# Week-6
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Week6">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <title>Week6</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sedans">
+                <img src="images/icon-sedans.svg" alt="Sedans">
+                <h1 class="h1">SEDANS</h1>
+                <p lang="en" class="p1" >Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                <button class="b1">Learn More</button>
+            </div>
+            <div class="suvs">
+                <img src="images/icon-suvs.svg" alt="SUV">
+                <h1>SUVS</h1>
+                <p lang="en">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and your off-road adventures.</p>
+                <button class="b2">Learn More</button>
+            </div>
+            <div class="luxury">
+                <img src="images/icon-luxury.svg" alt="Luxury">
+                <h1>LUXURY</h1>
+                <p lang="en">Cruise in the best car brands without the bloated prices.  Enjoy the enhance comfort of a luxury rental and arrive in style.</p>
+                <button class="b3">Learn More</button>
+            </div>
+        </div>
+    </body>
+</html>
